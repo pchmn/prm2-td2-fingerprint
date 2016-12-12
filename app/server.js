@@ -66,8 +66,8 @@ app.post('/fingerprint', function(req, res, next) {
 
 
 /**
- * Run app on port 3000
+ * Run app on port 8000
  */
-app.listen(3000, function () {
+app.listen(8000, function () {
     console.log('Example app listening on port 3000!')
 });
