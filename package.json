@@ -1,0 +1,23 @@
+{
+  "name": "prm2-td2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "fingerprintjs2": "^1.4.1",
+    "jquery": "^3.1.1",
+    "path": "^0.12.7",
+    "redis": "^2.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat de votre empreinte</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+</head>
+<body>
+
+    <div id="content_result">
+        <%if (result.alreadyExists) { %>
+            <h1>Vous n'êtes pas unique !</h1>
+        <% } else { %>
+            <h1>Vous êtes unique !</h1>
+        <% } %>
+
+        <h3>Votre empreinte</h3>
+        <p>User agent : <b><%= result.components[0].value %></b></p>
+        <p>Langue : <b><%= result.components[1].value %></b></p>
+        <p>OS : <b><%= result.components[12].value %></b></p>
+    </div>
+
+
+    <!-- js scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+    <script src="js/fingerprint2.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

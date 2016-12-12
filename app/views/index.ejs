@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tester empreinte</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+    <!--<link rel="stylesheet" href="css/style.css">-->
+
+</head>
+<body>
+
+    <div id="content_home">
+        <button id="test_fingerprint" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Tester son empreinte
+        </button>
+    </div>
+
+    <form style="display: hidden" action="/fingerprint" method="POST" id="form">
+        <input type="hidden" id="components" name="components" value=""/>
+        <input type="hidden" id="fingerprint" name="fingerprint" value=""/>
+    </form>
+
+    <!-- js scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+    <script src="js/fingerprint2.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
